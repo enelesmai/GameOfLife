@@ -47,5 +47,15 @@ class GameTest < MiniTest::Unit::TestCase
 	def test_Total_Universe
 		assert_equal 10, @universe.matrix.length
 	end
+
+	def test_countNeighbors
+		@myUniverse = Universe.new(4)
+		@myUniverse.matrix = [	[Cell.new(0,0,0), Cell.new(0,1,1), Cell.new(0,2,0), Cell.new(0,3,0)],
+								[Cell.new(1,0,0), Cell.new(1,1,0), Cell.new(1,2,1), Cell.new(1,3,0)],
+								[Cell.new(2,0,1), Cell.new(2,1,0), Cell.new(2,2,0), Cell.new(2,3,0)],
+								[Cell.new(3,0,1), Cell.new(3,1,0), Cell.new(3,2,1), Cell.new(3,3,0)]
+							]
+		assert_equal 3, @myUniverse.countNeighbors(1,1)
+	end
 	
 end

@@ -92,12 +92,12 @@ class Universe
 end
 
 ##For testing purposes
-univ = Universe.new(10)
-univ.fillUniverse
-univ.drawSpace
-10.times do
-	#system ("cls")
-	univ.walkTheUniverse
-	univ.drawSpace
-	sleep 1.5 # seconds
-end
+#univ = Universe.new(10)
+#univ.fillUniverse
+#univ.drawSpace
+#10.times do
+#	#system ("cls")
+#	univ.walkTheUniverse
+#	univ.drawSpace
+#	sleep 1.5 # seconds
+#end
